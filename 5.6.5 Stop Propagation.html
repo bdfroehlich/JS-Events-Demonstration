@@ -39,6 +39,9 @@
                         for(let elem of elems) {
                             elem.addEventListener("click", showAlert);
                         }
+                        //The click me button only selects the first parent element in the list of elements in the var elems after calling
+                        //the showAlert function. event.stopPropogation() prevents propogation of the current even in the capturing and
+                        //bubbling phase.
                     </script>
                     </body>
                     </html>
