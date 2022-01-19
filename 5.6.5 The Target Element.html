@@ -32,12 +32,16 @@
                     // Attaching an onclick event handler
                     div.onclick = function(event) {
                         event.target.style.backgroundColor = "lightblue";
+                        //changes the backgroundColor of the target that is clicked to lightblue
 
                         // Let the browser finish rendering of background color before showing alert
                         setTimeout(() => {
                             alert("target = " + event.target.tagName + ", this = " + this.tagName);
                             event.target.style.backgroundColor = ''
+                            //event.target.style.backgrounColor with a timeout of zero sets the backgroundColor style back to nothing after 0 seconds
+                            //when the alert box is closed
                         }, 0);
                     }
+                    //the target in the click event is the selected DOM element and the DIV is the nearest parent element "this.tagName" which is the div
                 </script>
                 </body> 
