@@ -20,6 +20,8 @@
                 <div onclick="alert('Bubbling: ' + this.tagName)">DIV
                     <p onclick="alert('Bubbling: ' + this.tagName)">P
                         <a href="#" onclick="alert('Bubbling: ' + this.tagName)">A</a>
+                        //Event bubbling occurs after reaching the target (button) and then bubbling upwards tot he next parent element's handlers
+                        //then to the granparent element above that and so on
                     </p>
                 </div>
                 </body>

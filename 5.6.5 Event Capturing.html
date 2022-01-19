@@ -38,9 +38,13 @@
     }
     
     var elems = document.querySelectorAll("div, p, a");
-    for(let elem of elems) {
-        elem.addEventListener("click", showTagName, true);
+    for(let element of elems) {
+        //for every element of the variable "elems" run the event listener on "click" and call showTagName function which
+        //provides an on screen alert of the element being "captured"
+        element.addEventListener("click", showTagName, true);
     }
+
+    //capturing the event from the container all the way down to the "Click Me" button
 </script>
 </body>
 </html>
